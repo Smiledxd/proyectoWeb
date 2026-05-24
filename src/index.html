@@ -12,281 +12,358 @@
   </head>
   <body>
     <header class="header">
-      <img src="" alt="" class="logo" />
-      <nav class="navegar">
-        <a href="" class="itemNav">INICIO</a>
-        <a href="" class="itemNav">ITEM1</a>
-        <a href="" class="itemNav">ITEM2</a>
-        <a href="" class="itemNav">ITEM3</a>
-        <a href="" class="itemNav">ITEM4</a>
-        <a href="" class="itemNav">ITEM5</a>
-      </nav>
-      <a href="" class="btn">BOTON</a>
+      <div class="layout-container header-flex">
+        <div class="container-logo">
+          <img src="img/logo.png" alt="IMAGEN-LOGO" />
+          <h1>Davilo<span>Web</span></h1>
+        </div>
+        <nav class="nav">
+          <a href="" class="item">INICIO</a>
+          <a href="#block1" class="item">BLOCK1</a>
+          <a href="" class="item">ITEM2</a>
+          <a href="" class="item">ITEM3</a>
+          <a href="" class="item">ITEM4</a>
+          <a href="" class="item">ITEM5</a>
+        </nav>
+        <a href="" class="btn">Boton</a>
+      </div>
     </header>
     <section class="hero">
-      <div class="hero-container1">
-        <hgroup class="title">
-          <p class="label">ETIQUETA</p>
-          <h1 class="principal">TITULO PRINCIPAL</h1>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            natus voluptatem est. Porro nemo optio fugiat excepturi debitis
-            accusantium dolor.
-          </p>
-        </hgroup>
-        <div class="botons">
-          <a href="" class="hero-container1-btn1">BOTON IZQUIERDO</a>
-          <a href="" class="hero-container1-btn2">BOTON DERECHO</a>
+      <div class="layout-container hero-flex">
+        <div class="hero-container1">
+          <hgroup class="title">
+            <h1 class="label">ETIQUETA Lorem ipsum dolor adipisicing.</h1>
+            <h2 class="principal">
+              Lorem ipsum dolor sit amet consectetur adipisicing Officiis.
+            </h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              natus voluptatem est. Porro nemo optio fugiat excepturi debitis
+              accusantium dolor.
+            </p>
+          </hgroup>
+          <div class="botons">
+            <a href="" class="hero-container1-btn1">BOTON IZQUIERDO</a>
+            <a href="" class="hero-container1-btn2">BOTON DERECHO</a>
+          </div>
+          <div class="benefit">
+            <div class="benefit-item">
+              <div class="item-icon">
+                <i class="bx bxs-zap"></i>
+              </div>
+              <div class="item-text">
+                <h3>BENEFICIO 1</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="item-icon">
+                <i class="bx bx-palette"></i>
+              </div>
+              <div class="item-text">
+                <h3>BENEFICIO 1</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="item-icon">
+                <i class="bx bx-bar-chart-alt"></i>
+              </div>
+              <div class="item-text">
+                <h3>BENEFICIO 1</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="benefit">
-          <div class="benefit-item1">
-            <i class="bx bxs-zap"></i>
-            <h3 class="benefit-item1-title">BENEFICIO 1</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+        <div class="hero-container2">
+          <div class="container-video">
+            <video
+              src="video/video1.mp4"
+              autoplay
+              muted
+              loop
+              class="mockup-left"
+            >
+              Tu navegador no soporta el video
+            </video>
           </div>
-          <div class="benefit-item2">
-            <i class="bx bx-palette"></i>
-            <h3 class="benefit-item1-title">BENEFICIO 1</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+          <div class="container-video">
+            <video
+              src="video/video2.mp4"
+              autoplay
+              muted
+              loop
+              class="mockup-center"
+            >
+              Tu navegador no soporta el video
+            </video>
           </div>
-          <div class="benefit-item3">
-            <i class="bx bx-bar-chart-alt"></i>
-            <h3 class="benefit-item1-title">BENEFICIO 1</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+          <div class="container-video">
+            <video
+              src="video/video3.mp4"
+              autoplay
+              muted
+              loop
+              class="mockup-right"
+            >
+              Tu navegador no soporta el video
+            </video>
           </div>
         </div>
-      </div>
-      <div class="hero-container2">
-        <img src="" alt="mockup" class="mockup1" />
-        <img src="" alt="mockup" class="mockup2" />
-        <img src="" alt="mockup" class="mockup3" />
       </div>
     </section>
-    <section class="block1">
-      <h2>BLOQUE DE CONTENIDO</h2>
-      <div class="block-filters">
-        <ul>
-          <li>
-            <button class="filters-btn">item</button>
-          </li>
-          <li>
-            <button class="filters-btn">item</button>
-          </li>
-          <li>
-            <button class="filters-btn">item</button>
-          </li>
-          <li>
-            <button class="filters-btn">item</button>
-          </li>
-          <li>
-            <button class="filters-btn">item</button>
-          </li>
-          <li>
-            <button class="filters-btn">item</button>
-          </li>
-        </ul>
+    <section id="block1">
+      <div class="layout-container">
+        <h2>BLOQUE DE CONTENIDO</h2>
+        <div class="block-filters">
+          <ul>
+            <li>
+              <button class="filters-btn">item</button>
+            </li>
+            <li>
+              <button class="filters-btn">item</button>
+            </li>
+            <li>
+              <button class="filters-btn">item</button>
+            </li>
+            <li>
+              <button class="filters-btn">item</button>
+            </li>
+            <li>
+              <button class="filters-btn">item</button>
+            </li>
+            <li>
+              <button class="filters-btn">item</button>
+            </li>
+          </ul>
+        </div>
+        <div class="carousel">
+          <div class="carousel-card">
+            <div class="card-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-description">
+              <h3>ITEM</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="">Ver más</a>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <div class="card-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-description">
+              <h3>ITEM</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="">Ver más</a>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <div class="card-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-description">
+              <h3>ITEM</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="">Ver más</a>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <div class="card-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-description">
+              <h3>ITEM</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="">Ver más</a>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <div class="card-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-description">
+              <h3>ITEM</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <a href="">Abrir otra pestaña para ver más</a>
       </div>
-      <div class="carousel">
-        <div class="carousel-card">
-          <div class="card-img">
-            <img src="" alt="" />
-          </div>
-          <div class="card-description">
-            <h3>ITEM</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="">Ver más</a>
-          </div>
-        </div>
-        <div class="carousel-card">
-          <div class="card-img">
-            <img src="" alt="" />
-          </div>
-          <div class="card-description">
-            <h3>ITEM</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="">Ver más</a>
-          </div>
-        </div>
-        <div class="carousel-card">
-          <div class="card-img">
-            <img src="" alt="" />
-          </div>
-          <div class="card-description">
-            <h3>ITEM</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="">Ver más</a>
-          </div>
-        </div>
-        <div class="carousel-card">
-          <div class="card-img">
-            <img src="" alt="" />
-          </div>
-          <div class="card-description">
-            <h3>ITEM</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="">Ver más</a>
-          </div>
-        </div>
-        <div class="carousel-card">
-          <div class="card-img">
-            <img src="" alt="" />
-          </div>
-          <div class="card-description">
-            <h3>ITEM</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="">Ver más</a>
-          </div>
-        </div>
-      </div>
-      <a href="">Abrir otra pestaña para ver más</a>
     </section>
     <section class="process">
-      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-      <div class="process-container">
-        <i class="bx bx-task"></i>
-        <div class="process-container-description">
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="layout-container">
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <div class="process-container">
+          <i class="bx bx-task"></i>
+          <div class="process-container-description">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
-      </div>
-      <div class="process-container">
-        <i class="bx bx-edit-alt"></i>
-        <div class="process-container-description">
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="process-container">
+          <i class="bx bx-edit-alt"></i>
+          <div class="process-container-description">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
-      </div>
-      <div class="process-container">
-        <i class="bx bxs-zap"></i>
-        <div class="process-container-description">
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="process-container">
+          <i class="bx bxs-zap"></i>
+          <div class="process-container-description">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
       </div>
     </section>
     <section class="block2">
-      <div class="container1">
-        <h2>Lorem ipsum dolor sit.</h2>
-        <div class="plans">
-          <div class="plans-item">
-            <div class="item1">TITULO</div>
-            <div class="item2">Lorem ipsum dolor sit amet consectetur.</div>
-            <div class="item3">Desde</div>
-            <div class="item4">$$$$$</div>
-            <div class="item5">
-              <ul>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-              </ul>
+      <div class="layout-container">
+        <div class="container1">
+          <h2>Lorem ipsum dolor sit.</h2>
+          <div class="plans">
+            <div class="plans-item">
+              <div class="item1">TITULO</div>
+              <div class="item2">Lorem ipsum dolor sit amet consectetur.</div>
+              <div class="item3">Desde</div>
+              <div class="item4">$$$$$</div>
+              <div class="item5">
+                <ul>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="plans-item">
-            <div class="item1">TITULO</div>
-            <div class="item2">Lorem ipsum dolor sit amet consectetur.</div>
-            <div class="item3">Desde</div>
-            <div class="item4">$$$$$</div>
-            <div class="item5">
-              <ul>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-              </ul>
+            <div class="plans-item">
+              <div class="item1">TITULO</div>
+              <div class="item2">Lorem ipsum dolor sit amet consectetur.</div>
+              <div class="item3">Desde</div>
+              <div class="item4">$$$$$</div>
+              <div class="item5">
+                <ul>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="plans-item">
-            <div class="item1">TITULO</div>
-            <div class="item2">Lorem ipsum dolor sit amet consectetur.</div>
-            <div class="item3">Desde</div>
-            <div class="item4">$$$$$</div>
-            <div class="item5">
-              <ul>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-                <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container2">
-        <div class="extra-title">Lorem ipsum dolor sit amet.</div>
-        <div class="extra-items">
-          <div class="item-icon">
-            <i class="bx bx-trophy"></i>
-            <div class="item-text">
-              <span>Lorem, ipsum.</span>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        <div class="extra-items">
-          <div class="item-icon">
-            <i class="bx bx-trophy"></i>
-            <div class="item-text">
-              <span>Lorem, ipsum.</span>
-              <p>Lorem ipsum dolor sit amet.</p>
+            <div class="plans-item">
+              <div class="item1">TITULO</div>
+              <div class="item2">Lorem ipsum dolor sit amet consectetur.</div>
+              <div class="item3">Desde</div>
+              <div class="item4">$$$$$</div>
+              <div class="item5">
+                <ul>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                  <li><i class="bx bx-check-circle"></i>Lorem, ipsum dolor.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="extra-items">
-          <div class="item-icon">
-            <i class="bx bx-trophy"></i>
-            <div class="item-text">
-              <span>Lorem, ipsum.</span>
-              <p>Lorem ipsum dolor sit amet.</p>
+        <div class="container2">
+          <div class="extra-title">Lorem ipsum dolor sit amet.</div>
+          <div class="extra-items">
+            <div class="item-icon">
+              <i class="bx bx-trophy"></i>
+              <div class="item-text">
+                <span>Lorem, ipsum.</span>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="extra-items">
-          <div class="item-icon">
-            <i class="bx bx-trophy"></i>
-            <div class="item-text">
-              <span>Lorem, ipsum.</span>
-              <p>Lorem ipsum dolor sit amet.</p>
+          <div class="extra-items">
+            <div class="item-icon">
+              <i class="bx bx-trophy"></i>
+              <div class="item-text">
+                <span>Lorem, ipsum.</span>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="extra-items">
+            <div class="item-icon">
+              <i class="bx bx-trophy"></i>
+              <div class="item-text">
+                <span>Lorem, ipsum.</span>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="extra-items">
+            <div class="item-icon">
+              <i class="bx bx-trophy"></i>
+              <div class="item-text">
+                <span>Lorem, ipsum.</span>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="recommendations">
-      <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
-      <div class="container">
-        <div class="card">
-          <div class="card-img">
-            <img src="" alt="">
+      <div class="layout-container">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+        <div class="container">
+          <div class="card">
+            <div class="card-img">
+              <img src="" alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+              atque excepturi quisquam. Voluptatum, necessitatibus amet. Ab
+              laborum delectus animi magni?
+            </p>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni atque excepturi quisquam. Voluptatum, necessitatibus amet. Ab laborum delectus animi magni?</p>
-        </div>
-        <div class="card">
-          <div class="card-img">
-            <img src="" alt="">
+          <div class="card">
+            <div class="card-img">
+              <img src="" alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+              atque excepturi quisquam. Voluptatum, necessitatibus amet. Ab
+              laborum delectus animi magni?
+            </p>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni atque excepturi quisquam. Voluptatum, necessitatibus amet. Ab laborum delectus animi magni?</p>
-        </div>
-        <div class="card">
-          <div class="card-img">
-            <img src="" alt="">
+          <div class="card">
+            <div class="card-img">
+              <img src="" alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+              atque excepturi quisquam. Voluptatum, necessitatibus amet. Ab
+              laborum delectus animi magni?
+            </p>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni atque excepturi quisquam. Voluptatum, necessitatibus amet. Ab laborum delectus animi magni?</p>
         </div>
       </div>
     </section>
     <div class="floating-whatsapp">
-      <a href=""><i class='bx bxl-whatsapp' style='color:#65d467'></i></a>
+      <a href=""><i class="bx bxl-whatsapp" style="color: #65d467"></i></a>
     </div>
     <footer>
-      <div class="footer-container">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, atque.</p>
-      </div>
-      <div class="botons">
-        <a href="">BOTON</a>
+      <div class="layout-container">
+        <div class="footer-container">
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            atque.
+          </p>
+        </div>
+        <div class="botons">
+          <a href="">BOTON</a>
+        </div>
       </div>
     </footer>
   </body>
