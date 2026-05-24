@@ -1,5 +1,188 @@
+:root {
+  --color-principal: #212529;
+  --color-secundario: #e0a32c;
+  --color-accento: #45b3c7;
+  --color-texto: #134566;
+  --color-fondo: #f8f9fa;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*layout-container*/
+.layout-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px; /* Evita que toque los bordes en pantallas chicas */
+  padding-right: 20px;
+}
+/*///////START HEADER///////*/
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(188, 186, 183);
+}
+.header .header-flex {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header-flex .container-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-flex .container-logo img {
+  width: auto;
+  height: 40px;
+  object-fit: contain;
+}
+.header-flex .container-logo h1 {
+  font-size: 1.5rem;
+  color: var(--color-texto);
+}
+.header-flex .container-logo h1 span {
+  color: var(--color-accento);
+}
+.header-flex .nav {
+  display: flex;
+  gap: 30px;
+}
+.header-flex .nav .item {
+  font-size: 1rem;
+  color: var(--color-texto);
+  font-weight: 700;
+  text-decoration: none;
+}
+.header-flex .btn {
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 7px 20px;
+  background-color: var(--color-accento);
+  color: var(--color-fondo);
+}
+/*///////END HEADER///////*/
+/*///////START HERO///////*/
+.hero {
+  background-color: rgb(174, 229, 211);
+  height: calc(100vh - 80px);
+  width: 100%;
+  max-height: 800px;
+}
+.hero .hero-flex {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hero-flex .hero-container1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 25px;
+}
+.hero-flex .hero-container1 .title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-flex .hero-container1 .title .label {
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 7px 10px;
+  background-color: rgb(115, 197, 235);
+  color: var(--color-fondo);
+  width: fit-content; /*ajusta el borde solo al contenido*/
+}
+.hero-flex .hero-container1 .title .principal {
+  font-size: 3rem;
+}
+.hero-flex .hero-container1 .title .description {
+  font-size: 1.5rem;
+}
+.hero-flex .hero-container1 .botons {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  font-size: 1rem;
+  text-align: center;
+}
+.hero-flex .hero-container1 .botons .hero-container1-btn1 {
+  border-radius: 35px;
+  padding: 15px 60px;
+  background-color: var(--color-secundario);
+  color: var(--color-fondo);
+  text-decoration: none;
+}
+.hero-flex .hero-container1 .botons .hero-container1-btn2 {
+  border-radius: 35px;
+  padding: 15px 60px;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  text-decoration: none;
+}
+.hero-flex .hero-container1 .benefit {
+  display: flex;
+  margin-top: 75px;
+  width: 100%;
+  justify-content: space-between;
+}
+.hero-flex .hero-container1 .benefit .benefit-item {
+  display: flex;
+  gap: 5px;
+}
+.hero-flex .hero-container1 .benefit .benefit-item .item-icon {
+  font-size: 48px;
+}
+.hero-flex .hero-container1 .benefit .benefit-item .item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero-flex .hero-container1 .benefit .benefit-item .item-text h3 {
+  font-size: 1rem;
+}
+.hero-flex .hero-container1 .benefit .benefit-item .item-text p {
+  font-size: 0.75rem;
+}
+.hero-flex .hero-container2 {
+  width: 50%; /* Restante para que encaje al lado*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-left: 15px;
+}
+.hero-flex .hero-container2 .container-video {
+  height: 190px;
+  width: 280px;
+}
+.hero-flex .hero-container2 .container-video .mockup-left {
+  position: absolute;
+  height: 190px;
+  width: 280px;
+  left: 0px;
+}
+.hero-flex .hero-container2 .container-video .mockup-center {
+  position: absolute;
+  height: 190px;
+  width: 280px;
+}
+.hero-flex .hero-container2 .container-video .mockup-right {
+  position: absolute;
+  height: 190px;
+  width: 280px;
+  right: 0;
 }
