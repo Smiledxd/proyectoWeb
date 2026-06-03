@@ -1,381 +1,504 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>miWeb</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>miWeb</title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="layout-container header__flex">
-      <div class="header__logo">
-        <img src="img/logo.png" alt="IMAGEN-LOGO" class="header__logo-img" />
-        <h1 class="header__logo-title">Davilo<span class="header__logo-span">Web</span></h1>
+  <body>
+    <header class="header">
+      <div class="layout-container header__flex">
+        <a href="" class="header__logo">
+          <img src="img/logo.png" alt="IMAGEN-LOGO" class="header__logo-img" />
+          <h3 class="header__logo-title">
+            Davilo<span class="header__logo-span">Web</span>
+          </h3>
+        </a>
+        <nav class="header__nav">
+          <a href="" class="header__nav-item">INICIO</a>
+          <a href="#catalog" class="header__nav-item">PRODUCTOS</a>
+          <a href="#process" class="header__nav-item">¿COMO FUNCIONA?</a>
+          <a href="#plans" class="header__nav-item">PRECIOS</a>
+          <!-- mobile -->
+        </nav>
+        <a href="" class="header__nav-whatsapp">
+          <i class="bx bxl-whatsapp bx-tada header__btn-icon"></i>Escríbenos</a
+        >
+        <!-- end mobile -->
+        <a href="" class="btn">Boton</a>
       </div>
-      <nav class="header__nav">
-        <a href="" class="header__nav-item">INICIO</a>
-        <a href="#carousel" class="header__nav-item">BLOCK1</a>
-        <a href="" class="header__nav-item">ITEM2</a>
-        <a href="" class="header__nav-item">ITEM3</a>
-        <a href="" class="header__nav-item">ITEM4</a>
-        <a href="" class="header__nav-item">ITEM5</a>
-      </nav>
-      <a href="" class="btn">Boton</a>
-    </div>
-  </header>
-  <section class="hero">
-    <div class="layout-container hero__flex">
-      <div class="hero__left">
-        <hgroup class="hero__title-group">
-          <h1 class="hero__label">ETIQUETA Lorem ipsum dolor adipisicing.</h1>
-          <h2 class="hero__title">
-            Lorem ipsum dolor sit amet consectetur adipisicing Officiis.
-          </h2>
-          <p class="hero__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            natus voluptatem est. Porro nemo optio fugiat excepturi debitis
-            accusantium dolor.
-          </p>
-        </hgroup>
-        <div class="hero__buttons">
-          <a href="" class="hero__btn hero__btn--primary">BOTON IZQUIERDO</a>
-          <a href="" class="hero__btn hero__btn--whatsapp"><i
-              class='bx bxl-whatsapp bx-tada hero__btn-icon'></i>Escríbenos por Whatsapp</a>
-        </div>
-        <div class="hero__benefits">
-          <div class="hero__benefit-item">
-            <div class="hero__benefit-icon">
-              <i class="bx bxs-zap"></i>
-            </div>
-            <div class="hero__benefit-text">
-              <h3 class="hero__benefit-title">BENEFICIO 1</h3>
-              <p class="hero__benefit-desc">Lorem ipsum dolor sit amet.</p>
-            </div>
+    </header>
+    <section class="hero">
+      <div class="layout-container hero__flex">
+        <div class="hero__left">
+          <hgroup class="hero__title-group">
+            <h1 class="btn btn--no-cursor">
+              ETIQUETA Lorem ipsum dolor adipisicing.
+            </h1>
+            <h2 class="hero__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing Officiis.
+            </h2>
+            <p class="hero__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              natus voluptatem est. Porro nemo optio fugiat excepturi debitis
+              accusantium dolor.
+            </p>
+          </hgroup>
+          <div class="hero__buttons">
+            <a href="" class="hero__btn hero__btn--primary">BOTON IZQUIERDO</a>
+            <a href="" class="hero__btn hero__btn--whatsapp"
+              ><i class="bx bxl-whatsapp bx-tada hero__btn-icon"></i>Escríbenos
+              por Whatsapp</a
+            >
           </div>
-          <div class="hero__benefit-item">
-            <div class="hero__benefit-icon">
-              <i class="bx bx-palette"></i>
+          <div class="hero__benefits">
+            <div class="hero__benefit-item">
+              <div class="hero__benefit-icon">
+                <i class="bx bxs-zap"></i>
+              </div>
+              <div class="hero__benefit-text">
+                <h3 class="hero__benefit-title">BENEFICIO 1</h3>
+                <p class="hero__benefit-desc">Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
-            <div class="hero__benefit-text">
-              <h3 class="hero__benefit-title">BENEFICIO 1</h3>
-              <p class="hero__benefit-desc">Lorem ipsum dolor sit amet.</p>
+            <div class="hero__benefit-item">
+              <div class="hero__benefit-icon">
+                <i class="bx bx-palette"></i>
+              </div>
+              <div class="hero__benefit-text">
+                <h3 class="hero__benefit-title">BENEFICIO 1</h3>
+                <p class="hero__benefit-desc">Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
-          </div>
-          <div class="hero__benefit-item">
-            <div class="hero__benefit-icon">
-              <i class="bx bx-bar-chart-alt"></i>
-            </div>
-            <div class="hero__benefit-text">
-              <h3 class="hero__benefit-title">BENEFICIO 1</h3>
-              <p class="hero__benefit-desc">Lorem ipsum dolor sit amet.</p>
+            <div class="hero__benefit-item">
+              <div class="hero__benefit-icon">
+                <i class="bx bx-bar-chart-alt"></i>
+              </div>
+              <div class="hero__benefit-text">
+                <h3 class="hero__benefit-title">BENEFICIO 1</h3>
+                <p class="hero__benefit-desc">Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="hero__right">
-        <div class="hero__video-container">
-          <video src="video/video1.mp4" autoplay muted loop class="hero__mockup hero__mockup--left">
-            Tu navegador no soporta el video
-          </video>
-        </div>
-        <div class="hero__video-container">
-          <video src="video/video2.mp4" autoplay muted loop class="hero__mockup hero__mockup--center">
-            Tu navegador no soporta el video
-          </video>
-        </div>
-        <div class="hero__video-container">
-          <video src="video/video3.mp4" autoplay muted loop class="hero__mockup hero__mockup--right">
-            Tu navegador no soporta el video
-          </video>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="carousel" class="carousel">
-    <div class="layout-container carousel__flex">
-      <h2 class="carousel__title">TITULO Lorem ipsum dolor sit amet.</h2>
-      <div class="carousel__filters">
-        <ul class="carousel__filters-list">
-          <li>
-            <button class="btn">item</button>
-          </li>
-          <li>
-            <button class="btn">item</button>
-          </li>
-          <li>
-            <button class="btn">item</button>
-          </li>
-          <li>
-            <button class="btn">item</button>
-          </li>
-          <li>
-            <button class="btn">item</button>
-          </li>
-          <li>
-            <button class="btn">item</button>
-          </li>
-        </ul>
-      </div>
-      <div class="carousel__container">
-        <div class="card card--carousel">
-          <div class="card__img-container card__img-container--carousel">
-            <img src="img/mockup/mockup1.jpg" alt="imagen" class="card__image" />
+        <div class="hero__right">
+          <div class="hero__video-container">
+            <video
+              src="video/video1.mp4"
+              autoplay
+              muted
+              loop
+              class="hero__mockup hero__mockup--left"
+            >
+              Tu navegador no soporta el video
+            </video>
           </div>
-          <div class="carousel__card-description">
-            <h3 class="carousel__card-title">ITEM</h3>
-            <p class="carousel__card-text">Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="" class="carousel__card-link">Ver más<i
-                class='bx bx-right-arrow-alt bx-fade-left carousel__card-link-icon'></i></a>
+          <div class="hero__video-container">
+            <video
+              src="video/video2.mp4"
+              autoplay
+              muted
+              loop
+              class="hero__mockup hero__mockup--center"
+            >
+              Tu navegador no soporta el video
+            </video>
           </div>
-        </div>
-        <div class="card card--carousel">
-          <div class="card__img-container card__img-container--carousel">
-            <img src="img/mockup/mockup2.jpg" alt="imagen" class="card__image" />
-          </div>
-          <div class="carousel__card-description">
-            <h3 class="carousel__card-title">ITEM</h3>
-            <p class="carousel__card-text">Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="" class="carousel__card-link">Ver más<i
-                class='bx bx-right-arrow-alt bx-fade-left carousel__card-link-icon'></i></a>
-          </div>
-        </div>
-        <div class="card card--carousel">
-          <div class="card__img-container card__img-container--carousel">
-            <img src="img/mockup/mockup3.jpg" alt="imagen" class="card__image" />
-          </div>
-          <div class="carousel__card-description">
-            <h3 class="carousel__card-title">ITEM</h3>
-            <p class="carousel__card-text">Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="" class="carousel__card-link">Ver más<i
-                class='bx bx-right-arrow-alt bx-fade-left carousel__card-link-icon'></i></a>
-          </div>
-        </div>
-        <div class="card card--carousel">
-          <div class="card__img-container card__img-container--carousel">
-            <img src="img/mockup/mockup4.jpg" alt="imagen" class="card__image" />
-          </div>
-          <div class="carousel__card-description">
-            <h3 class="carousel__card-title">ITEM</h3>
-            <p class="carousel__card-text">Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="" class="carousel__card-link">Ver más<i
-                class='bx bx-right-arrow-alt bx-fade-left carousel__card-link-icon'></i></a>
-          </div>
-        </div>
-        <div class="card card--carousel">
-          <div class="card__img-container card__img-container--carousel">
-            <img src="img/mockup/mockup5.jpg" alt="imagen" class="card__image" />
-          </div>
-          <div class="carousel__card-description">
-            <h3 class="carousel__card-title">ITEM</h3>
-            <p class="carousel__card-text">Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="" class="carousel__card-link">Ver más<i
-                class='bx bx-right-arrow-alt bx-fade-left carousel__card-link-icon'></i></a>
+          <div class="hero__video-container">
+            <video
+              src="video/video3.mp4"
+              autoplay
+              muted
+              loop
+              class="hero__mockup hero__mockup--right"
+            >
+              Tu navegador no soporta el video
+            </video>
           </div>
         </div>
       </div>
-      <a class="carousel__flex-btn" href="">Abrir otra pestaña para ver más</a>
-    </div>
-  </section>
-  <section class="process">
-    <div class="layout-container process__flex">
-      <h2 class="process__title">Lorem ipsum dolor sit amet consectetur.</h2>
-      <div class="process__gallery">
-        <div class="process__container">
-          <div class="process__icon-container">
-            <i class="bx bx-task process__icon"></i>
+    </section>
+    <section id="catalog" class="catalog">
+      <div class="layout-container catalog__flex">
+        <h2 class="catalog__title">TITULO Lorem ipsum dolor sit amet.</h2>
+        <div class="catalog__buttons">
+          <ul class="catalog__buttons-list">
+            <li>
+              <button class="btn">item</button>
+            </li>
+            <li>
+              <button class="btn">item</button>
+            </li>
+            <li>
+              <button class="btn">item</button>
+            </li>
+            <li>
+              <button class="btn">item</button>
+            </li>
+            <li>
+              <button class="btn">item</button>
+            </li>
+            <li>
+              <button class="btn">item</button>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__container">
+          <div class="catalog__product">
+            <div class="catalog__product-img">
+              <img src="img/mockup/mockup1.jpg" alt="imagen" />
+            </div>
+            <div class="product__card-description">
+              <h3 class="product__card-title">ITEM</h3>
+              <p class="product__card-text">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <a href="" class="product__card-link"
+                >Ver más<i
+                  class="bx bx-right-arrow-alt bx-fade-left product__card-link-icon"
+                ></i
+              ></a>
+            </div>
           </div>
-          <div class="process__container-description">
-            <h3 class="process__container-title">1. Lorem, ipsum dolor.</h3>
-            <p class="process__container-text">Lorem ipsum dolor sit amet consectetur,</p>
+          <div class="catalog__product">
+            <div class="catalog__product-img">
+              <img src="img/mockup/mockup2.jpg" alt="imagen" />
+            </div>
+            <div class="product__card-description">
+              <h3 class="product__card-title">ITEM</h3>
+              <p class="product__card-text">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <a href="" class="product__card-link"
+                >Ver más<i
+                  class="bx bx-right-arrow-alt bx-fade-left product__card-link-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="catalog__product">
+            <div class="catalog__product-img">
+              <img src="img/mockup/mockup3.jpg" alt="imagen" />
+            </div>
+            <div class="product__card-description">
+              <h3 class="product__card-title">ITEM</h3>
+              <p class="product__card-text">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <a href="" class="product__card-link"
+                >Ver más<i
+                  class="bx bx-right-arrow-alt bx-fade-left product__card-link-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="catalog__product">
+            <div class="catalog__product-img">
+              <img src="img/mockup/mockup4.jpg" alt="imagen" />
+            </div>
+            <div class="product__card-description">
+              <h3 class="product__card-title">ITEM</h3>
+              <p class="product__card-text">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <a href="" class="product__card-link"
+                >Ver más<i
+                  class="bx bx-right-arrow-alt bx-fade-left product__card-link-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="catalog__product">
+            <div class="catalog__product-img">
+              <img src="img/mockup/mockup5.jpg" alt="imagen" />
+            </div>
+            <div class="product__card-description">
+              <h3 class="product__card-title">ITEM</h3>
+              <p class="product__card-text">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <a href="" class="product__card-link"
+                >Ver más<i
+                  class="bx bx-right-arrow-alt bx-fade-left product__card-link-icon"
+                ></i
+              ></a>
+            </div>
           </div>
         </div>
-        <div class="process__container">
-          <div class="process__icon-container">
-            <i class="bx bx-edit-alt process__icon"></i>
-          </div>
-          <div class="process__container-description">
-            <h3 class="process__container-title">2. Lorem, ipsum dolor.</h3>
-            <p class="process__container-text">Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-        </div>
-        <div class="process__container">
-          <div class="process__icon-container">
-            <i class="bx bxs-zap process__icon"></i>
-          </div>
-          <div class="process__container-description">
-            <h3 class="process__container-title">3. Lorem, ipsum dolor.</h3>
-            <p class="process__container-text">Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-        </div>
+        <a class="catalog__flex-btn" href="">Abrir otra pestaña para ver más</a>
       </div>
-    </div>
-  </section>
-  <section class="plans">
-    <div class="layout-container plans__flex">
-      <div class="plans__left">
-        <h2 class="plans__title">Lorem ipsum dolor sit.</h2>
-        <div class="plans__container">
-          <div class="card card--plan">
-            <div class="plans__item-title">TITULO</div>
-            <div class="plans__item-desc">Lorem ipsum dolor sit amet consectetur.</div>
-            <div class="plans__item-label">Desde</div>
-            <div class="plans__item-price">$$$$$</div>
-            <div class="plans__item-features-container">
-              <ul class="plans__item-features">
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-              </ul>
+    </section>
+    <section class="process" id="process">
+      <div class="layout-container process__flex">
+        <h2 class="process__title">Lorem ipsum dolor sit amet consectetur.</h2>
+        <div class="process__gallery">
+          <div class="process__container">
+            <div class="process__icon-container">
+              <i class="bx bx-task process__icon"></i>
+            </div>
+            <div class="process__container-description">
+              <h3 class="process__container-title">1. Lorem, ipsum dolor.</h3>
+              <p class="process__container-text">
+                Lorem ipsum dolor sit amet consectetur,
+              </p>
             </div>
           </div>
-          <div class="card card--plan">
-            <div class="plans__item-title">TITULO</div>
-            <div class="plans__item-desc">Lorem ipsum dolor sit amet consectetur.</div>
-            <div class="plans__item-label">Desde</div>
-            <div class="plans__item-price">$$$$$</div>
-            <div class="plans__item-features-container">
-              <ul class="plans__item-features">
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-              </ul>
+          <div class="process__container">
+            <div class="process__icon-container">
+              <i class="bx bx-edit-alt process__icon"></i>
+            </div>
+            <div class="process__container-description">
+              <h3 class="process__container-title">2. Lorem, ipsum dolor.</h3>
+              <p class="process__container-text">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
             </div>
           </div>
-          <div class="card card--plan">
-            <div class="plans__item-title">TITULO</div>
-            <div class="plans__item-desc">Lorem ipsum dolor sit amet consectetur.</div>
-            <div class="plans__item-label">Desde</div>
-            <div class="plans__item-price">$$$$$</div>
-            <div class="plans__item-features-container">
-              <ul class="plans__item-features">
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-                <li class="plans__item-feature"><i class="bx bx-check-circle plans__item-feature-icon"></i>Lorem, ipsum
-                  dolor.</li>
-              </ul>
+          <div class="process__container">
+            <div class="process__icon-container">
+              <i class="bx bxs-zap process__icon"></i>
+            </div>
+            <div class="process__container-description">
+              <h3 class="process__container-title">3. Lorem, ipsum dolor.</h3>
+              <p class="process__container-text">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="plans__right">
-        <div class="plans__extra-title">Lorem ipsum dolor sit amet.</div>
-        <div class="plans__extra-item">
-          <div class="plans__extra-icon-container">
-            <i class="bx bx-trophy plans__extra-icon"></i>
-          </div>
-          <div class="plans__extra-text">
-            <span class="plans__extra-subtitle">Lorem, ipsum.</span>
-            <p class="plans__extra-desc">Lorem ipsum dolor sit amet.</p>
+    </section>
+    <section class="plans" id="plans">
+      <div class="layout-container plans__flex">
+        <div class="plans__left">
+          <h2 class="plans__title">Lorem ipsum dolor sit.</h2>
+          <div class="plans__container">
+            <div class="plans__container-description">
+              <div class="plans__item-title">TITULO</div>
+              <div class="plans__item-desc">
+                Lorem ipsum dolor sit amet consectetur.
+              </div>
+              <div class="plans__item-label">Desde</div>
+              <div class="plans__item-price">$$$$$</div>
+              <div class="plans__item-features-container">
+                <ul class="plans__item-feature">
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="plans__container-description">
+              <div class="plans__item-title">TITULO</div>
+              <div class="plans__item-desc">
+                Lorem ipsum dolor sit amet consectetur.
+              </div>
+              <div class="plans__item-label">Desde</div>
+              <div class="plans__item-price">$$$$$</div>
+              <div class="plans__item-features-container">
+                <ul class="plans__item-feature">
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="plans__container-description">
+              <div class="plans__item-title">TITULO</div>
+              <div class="plans__item-desc">
+                Lorem ipsum dolor sit amet consectetur.
+              </div>
+              <div class="plans__item-label">Desde</div>
+              <div class="plans__item-price">$$$$$</div>
+              <div class="plans__item-features-container">
+                <ul class="plans__item-feature">
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Lorem, ipsum dolor.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="plans__extra-item">
-          <div class="plans__extra-icon-container">
-            <i class="bx bx-trophy plans__extra-icon"></i>
+        <div class="plans__right">
+          <div class="plans__extra-title">Lorem ipsum dolor sit amet.</div>
+          <div class="plans__extra-item">
+            <div class="plans__extra-icon-container">
+              <i class="bx bx-trophy plans__extra-icon"></i>
+            </div>
+            <div class="plans__extra-text">
+              <span class="plans__extra-subtitle">Lorem, ipsum.</span>
+              <p class="plans__extra-desc">Lorem ipsum dolor sit amet.</p>
+            </div>
           </div>
-          <div class="plans__extra-text">
-            <span class="plans__extra-subtitle">Lorem, ipsum.</span>
-            <p class="plans__extra-desc">Lorem ipsum dolor sit amet.</p>
+          <div class="plans__extra-item">
+            <div class="plans__extra-icon-container">
+              <i class="bx bx-trophy plans__extra-icon"></i>
+            </div>
+            <div class="plans__extra-text">
+              <span class="plans__extra-subtitle">Lorem, ipsum.</span>
+              <p class="plans__extra-desc">Lorem ipsum dolor sit amet.</p>
+            </div>
           </div>
-        </div>
-        <div class="plans__extra-item">
-          <div class="plans__extra-icon-container">
-            <i class="bx bx-trophy plans__extra-icon"></i>
+          <div class="plans__extra-item">
+            <div class="plans__extra-icon-container">
+              <i class="bx bx-trophy plans__extra-icon"></i>
+            </div>
+            <div class="plans__extra-text">
+              <span class="plans__extra-subtitle">Lorem, ipsum.</span>
+              <p class="plans__extra-desc">Lorem ipsum dolor sit amet.</p>
+            </div>
           </div>
-          <div class="plans__extra-text">
-            <span class="plans__extra-subtitle">Lorem, ipsum.</span>
-            <p class="plans__extra-desc">Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <div class="plans__extra-item">
-          <div class="plans__extra-icon-container">
-            <i class="bx bx-trophy plans__extra-icon"></i>
-          </div>
-          <div class="plans__extra-text">
-            <span class="plans__extra-subtitle">Lorem, ipsum.</span>
-            <p class="plans__extra-desc">Lorem ipsum dolor sit amet.</p>
+          <div class="plans__extra-item">
+            <div class="plans__extra-icon-container">
+              <i class="bx bx-trophy plans__extra-icon"></i>
+            </div>
+            <div class="plans__extra-text">
+              <span class="plans__extra-subtitle">Lorem, ipsum.</span>
+              <p class="plans__extra-desc">Lorem ipsum dolor sit amet.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="recommendations">
-    <div class="layout-container recommendations__flex">
-      <h2 class="recommendations__title">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
-      <div class="recommendations__container">
-        <div class="card card--recommendation">
-          <div class="card__img-container card__img-container--recommendation">
-            <img src="img/recommendations/1.jpg" alt="" class="card__image card__image--recommendation" />
+    </section>
+    <section class="recommendations">
+      <div class="layout-container recommendations__flex">
+        <h2 class="recommendations__title">
+          Lorem ipsum dolor sit amet consectetur adipisicing.
+        </h2>
+        <div class="recommendations__container">
+          <div class="recommendations__card">
+            <div class="recommendations__card-img">
+              <img src="img/recommendations/1.jpg" alt="" />
+            </div>
+            <div class="recommendations__card-text">
+              <div class="stars">
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+              </p>
+            </div>
           </div>
-          <p class="recommendations__card-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-            atque excepturi quisquam. Voluptatum, necessitatibus amet. Ab
-            laborum delectus animi magni?
-          </p>
-        </div>
-        <div class="card card--recommendation">
-          <div class="card__img-container card__img-container--recommendation">
-            <img src="img/recommendations/2.jpg" alt="" class="card__image card__image--recommendation" />
+          <div class="recommendations__card">
+            <div class="recommendations__card-img">
+              <img src="img/recommendations/2.jpg" alt="" />
+            </div>
+            <div class="recommendations__card-text">
+              <div class="stars">
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+              </p>
+            </div>
           </div>
-          <p class="recommendations__card-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-            atque excepturi quisquam. Voluptatum, necessitatibus amet. Ab
-            laborum delectus animi magni?
-          </p>
-        </div>
-        <div class="card card--recommendation">
-          <div class="card__img-container card__img-container--recommendation">
-            <img src="img/recommendations/3.jpg" alt="" class="card__image card__image--recommendation" />
+          <div class="recommendations__card">
+            <div class="recommendations__card-img">
+              <img src="img/recommendations/3.jpg" alt="" />
+            </div>
+            <div class="recommendations__card-text">
+              <div class="stars">
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+              </p>
+            </div>
           </div>
-          <p class="recommendations__card-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-            atque excepturi quisquam. Voluptatum, necessitatibus amet. Ab
-            laborum delectus animi magni?
-          </p>
         </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="layout-container footer__flex">
-      <div class="footer__color">
-        <div class="footer__container">
-          <h3 class="footer__title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-          <p class="footer__desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-            atque.
-          </p>
+    </section>
+    <footer class="footer">
+      <div class="layout-container footer__flex">
+        <div class="footer__color">
+          <div class="footer__container">
+            <h3 class="footer__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h3>
+            <p class="footer__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam, atque.
+            </p>
+          </div>
+          <a href="" class="btn btn--footer">BOTON</a>
         </div>
-        <a href="" class="footer__btn">BOTON</a>
       </div>
-    </div>
-  </footer>
-  <div class="floating-whatsapp">
-    <a href="" class="floating-whatsapp__link"><i class="bx bxl-whatsapp" style="color: #fff"></i></a>
-  </div>
-</body>
-
+    </footer>
+  </body>
 </html>
