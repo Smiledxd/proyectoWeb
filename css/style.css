@@ -801,13 +801,13 @@ img {
     gap: 5px;
   }
   .plans__item-title {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   .plans__item-desc {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .plans__item-label {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
   .plans__item-price {
     font-size: 2rem;
@@ -820,7 +820,7 @@ img {
   }
   .plans__item-feature-box {
     gap: 1em;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .plans__item-feature-icon {
     color: var(--color-accento);
@@ -902,12 +902,13 @@ img {
     height: 60px;
   }
   .header__flex {
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     gap: 0em;
+    position: relative;
   }
   .header__nav {
     display: none;
-    position: relative;
   }
   .header__logo-img {
     display: block;
@@ -917,7 +918,7 @@ img {
   }
   .header__nav-whatsapp {
     position: absolute;
-    right: 4em;
+    right: 6em;
     padding: 0px 0px;
     border: 0;
     gap: 10px;
@@ -937,44 +938,47 @@ img {
     display: none;
   }
   .btn-hamburger {
+    padding-top: 7.5px;
     display: block;
     font-size: 3rem;
+    position: absolute;
+    right: 0.5em;
+    /* Ajusta la posición del botón hamburguesa */
+    top: 50%;
+    transform: translateY(-50%);
   }
   /*///////END HEADER///////*/
   /*///////START HERO///////*/
   .hero {
     margin-top: 60px;
+    height: 50dvh;
+    min-height: 500px;
   }
   .hero__flex {
-    flex-direction: column;
     gap: 0em;
+    margin-bottom: -50px;
   }
   .hero__left {
     align-items: center;
     gap: 10px;
+    width: 100%;
   }
   .hero__title-group {
-    gap: 0.5em;
     text-align: center;
+    align-items: center;
+    gap: 1em;
+  }
+  .btn--no-cursor {
+    font-size: 0.8rem;
   }
   .hero__title {
-    font-size: 3.15rem;
+    font-size: 2.5rem;
   }
   .hero__description {
-    font-size: 1.35rem;
+    font-size: 1rem;
   }
   .hero__buttons {
-    font-size: 0.9rem;
-  }
-  .hero__btn {
-    border-radius: 35px;
-    padding: 20px 30px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .hero__btn--primary {
-    background-color: var(--color-secundario);
-    color: var(--color-fondo);
+    font-size: 0.8rem;
   }
   .hero__btn--whatsapp {
     display: none;
@@ -993,96 +997,97 @@ img {
   .catalog__flex {
     gap: 2em;
   }
+  .catalog__title {
+    font-size: 1.25rem;
+  }
   .catalog__buttons {
-    width: 80%;
+    width: 100%;
   }
   /*padre de los botones celestes ↓ */
   .catalog__buttons-list {
     margin-top: 0;
   }
+  .btn--catalog {
+    font-size: 1rem;
+    padding: 7px 20px;
+  }
   .catalog__container {
     gap: 1em;
+    flex-direction: column;
+    width: 100%;
   }
   .catalog__product {
-    width: 25%;
+    flex-direction: row;
+    width: 90%;
   }
   .product__card-link {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .product__card-link-icon {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .catalog__flex-btn {
     font-size: 0.8rem;
   }
+  .catalog__product-img {
+    width: 320px;
+  }
+  .product__card-title {
+    font-size: 1.25rem;
+  }
   /*///////END CATALOG///////*/
   /*///////START PROCESS///////*/
   .process {
-    height: 300px;
+    height: 250px;
   }
   .process__flex {
     gap: 10px;
+    height: 100%;
   }
   .process__title {
-    margin-top: 1em;
+    margin-top: 0;
     font-size: 1.35rem;
   }
+  .process__gallery {
+    padding: 20px 0;
+  }
   .process__container {
-    gap: 10px;
+    gap: 2px;
+    flex-direction: column;
   }
   .process__icon-container {
-    width: 80px;
-    height: 80px;
-    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
   }
   .process__icon {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .process__container-description {
-    display: flex;
+    text-align: center;
     flex-direction: column;
-    height: auto;
-    margin-top: 25px;
+    margin-top: 0px;
   }
   .process__container-title {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .process__container-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   /*///////END PROCESS///////*/
   /*///////START PLANS///////*/
-  .plans {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
   .plans__flex {
     flex-direction: column;
-  }
-  .plans__left {
-    gap: 10px;
+    gap: 1em;
   }
   .plans__title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
-  .plans__container-description {
-    gap: 5px;
-  }
-  .plans__item-title {
-    font-size: 1.1rem;
-  }
-  .plans__item-desc {
-    font-size: 0.8rem;
-  }
-  .plans__item-label {
-    font-size: 0.75rem;
-  }
-  .plans__item-price {
-    font-size: 2rem;
+  .plans__container {
+    flex-direction: column;
   }
   .plans__item-features-container {
-    margin-top: 5px;
+    flex-direction: column;
+    align-items: center;
   }
   .plans__item-feature {
     gap: 5px;
@@ -1092,69 +1097,75 @@ img {
     font-size: 0.8rem;
   }
   .plans__item-feature-icon {
-    color: var(--color-accento);
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   .plans__right {
     width: 100%;
-    flex-direction: row;
-    align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .plans__extra-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
   }
   .plans__extra-item {
-    flex-direction: column;
-    gap: 5px;
-    border: 1px solid var(--color-texto);
-    border-radius: 10px;
-    padding: 10px;
+    width: 45%;
   }
   .plans__extra-icon {
-    font-size: 1.25rem;
-  }
-  .plans__extra-text {
-    text-align: center;
-    gap: 5px;
+    font-size: 1.5rem;
   }
   .plans__extra-subtitle {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
   .plans__extra-desc {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
   /*///////END PLANS///////*/
   /*///////START RECOMMENDATIONS///////*/
-  .recommendations {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
   .recommendations__title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .recommendations__container {
     gap: 1em;
+    flex-direction: column;
+    align-items: center;
   }
   .recommendations__card {
-    flex-direction: column;
-    height: 12.5em;
-    gap: 1em;
-    text-align: center;
+    flex-direction: row;
+    text-align: start;
+    justify-content: center;
+    height: auto;
   }
   .recommendations__card-img {
-    flex-shrink: 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
   }
   .recommendations__card-text {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
   /*///////END RECOMMENDATIONS///////*/
   /*///////START FOOTER///////*/
+  .footer__flex {
+    height: 100%;
+  }
+  .footer__color {
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+  }
+  .footer__container {
+    padding: 20px 0;
+    text-align: center;
+  }
   .footer__title {
     font-size: 1rem;
   }
   .footer__desc {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
   .btn--footer {
     font-size: 0.8rem;
