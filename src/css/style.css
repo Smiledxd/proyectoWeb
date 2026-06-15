@@ -664,6 +664,7 @@ img {
   /*///////START HERO///////*/
   .hero {
     margin-top: 60px;
+    min-height: 500px;
   }
   .hero__flex {
     flex-direction: column;
@@ -701,6 +702,7 @@ img {
   }
   .hero__benefits {
     margin-top: 20px;
+    justify-content: center;
     width: 100%;
     gap: 1em;
   }
@@ -1035,6 +1037,7 @@ img {
   }
   .catalog__title {
     font-size: 1.25rem;
+    text-align: center;
   }
   .catalog__buttons {
     width: 100%;
