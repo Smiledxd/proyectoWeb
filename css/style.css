@@ -126,7 +126,9 @@ img {
 .header__nav-btn {
   display: none;
 }
-.btn-hamburger {
+.show-menu,
+.hide-menu,
+#check {
   display: none;
 }
 /*BOTON WHATSAPP MOBILE*/
@@ -908,7 +910,25 @@ img {
     position: relative;
   }
   .header__nav {
-    display: none;
+    position: fixed;
+    width: 55%;
+    height: 40vh;
+    z-index: 100;
+    top: 0;
+    padding: 100px 0;
+    background-color: var(--color-section);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    border: 2px solid var(--color-accento);
+    border-radius: 40px;
+    right: -100%;
+  }
+  .header__nav-item {
+    display: block;
+    font-size: 1.25rem;
   }
   .header__logo-img {
     display: block;
@@ -937,15 +957,24 @@ img {
   .btn--no-mobile {
     display: none;
   }
-  .btn-hamburger {
-    padding-top: 7.5px;
+  .show-menu,
+  .hide-menu {
     display: block;
+    padding-top: 7.5px;
     font-size: 3rem;
     position: absolute;
     right: 0.5em;
     /* Ajusta la posición del botón hamburguesa */
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--color-accento);
+  }
+  .hide-menu {
+    top: 0.5em;
+  }
+  #check:checked ~ .header__nav {
+    right: 0;
   }
   /*///////END HEADER///////*/
   /*///////START HERO///////*/
