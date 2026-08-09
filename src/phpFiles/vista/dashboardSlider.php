@@ -9,28 +9,28 @@
   </div>
   <ul class="navList">
     <li>
-      <a href="#">
+      <a href="dashboard.php">
         <i class="bx bx-grid-alt"></i>
         <span class="linksName">Dashboard</span>
       </a>
       <span class="tooltip">Dashboard</span>
     </li>
     <li>
-      <a href="#">
+      <a href="usuarios.php">
         <i class="bx bx-user"></i>
         <span class="linksName">Usuarios</span>
       </a>
       <span class="tooltip">Usuarios</span>
     </li>
     <li>
-      <a href="">
+      <a href="mensajes.php">
         <i class="bx bx-chat"></i>
         <span class="linksName">Mensajes</span>
       </a>
       <span class="tooltip">Mensajes</span>
     </li>
     <li>
-      <a href="">
+      <a href="productos.php">
         <i class="bx bx-cart"></i>
         <span class="linksName">Productos</span>
       </a>
