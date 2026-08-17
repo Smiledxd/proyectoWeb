@@ -25,7 +25,7 @@
     <!-- incorporar Jquery y SweetAlert2 -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <title>Dashboard - DaviloWeb</title>
+    <title>Dashboard - DesignCo</title>
   </head>
   <body>
     <!-- incluir con PHP a dashboardSlider -->
