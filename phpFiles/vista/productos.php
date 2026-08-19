@@ -38,7 +38,7 @@
         <div class="col-12 col-md-4 col-lg-3">
           <h2>Mantenimiento de Productos</h2>
           <!-- formulario -->
-          <form id="formulario" autocomplete="off">
+          <form id="formulario_productos" autocomplete="off">
             <div class="mb-3">
               <input type="text" id="id_productos" name="id_productos" value="0">
               <input type="text" id="accion" name="accion" value="insertar">
@@ -64,16 +64,45 @@
               <!-- mostrar imagen en miniatura -->
               <div id="miniatura" style="margin-top: 10px;"></div>
             </div>
-            <button type="submit" class="btn btn-primary">Guardar Producto
+            <button type="submit" class="btn btn-primary" id="btn_guardar">Guardar Producto
               <!-- spinner -->
-            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;" id="spinner"></span></button>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;" id="spinner"></span>
+            </button>
             <!-- cancelar registro o cambios -->
             <button type="button" class="btn btn-secondary" id="btnCancelar">Cancelar</button>
           </form>
 
         </div>
         <div class="col-12 col-md-8 col-lg-9">
-
+          <!-- bloque para hacer la búsqueda -->
+          <div class="mb-3">
+            <label for="buscar_productos" class="form-label">Buscar Productos</label>
+            <input type="text" class="form-control" id="buscar_productos" name="buscar_productos" placeholder="Ingrese el nombre del producto a buscar">
+          </div>
+          <!-- bloque para mostrar los resultados sobre una tabla con las acciones editar y eliminar -->
+          <div class="table-responsive">
+            <table class="table table-striped table-hover" id="tabla_productos">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Stock</th>
+                  <th scope="col">Imagen</th>
+                  <th scope="col">Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="cuerpoTablaProductos">
+                <!-- aquí se llenará la tabla con los datos de los productos -->
+              </tbody>
+            </table>
+          </div>
+          <!-- bloque para la paginación -->
+          <nav aria-label="Page navigation example">
+            <ul class="pagination" id="paginacionProductos">
+              <!-- aquí se llenará la paginación con los datos de los productos -->
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
