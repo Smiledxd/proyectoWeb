@@ -42,13 +42,82 @@
     mysqli_stmt_close($preparar);
     mysqli_close($conec);
   }
-
   if($accion == "actualizar"){
-
+    $id_productos = $_REQUEST['id_productos'] ?? 0;
+    $nombre_productos = $_REQUEST['nombre_productos'] ?? '';
+    $descripcion_productos = $_REQUEST['descripcion_productos'] ?? '';
+    $precio_productos = $_REQUEST['precio_productos'] ?? '';
+    $cantidad_productos = $_REQUEST['cantidad_productos'] ?? '';
+    $imgBase64 = $_REQUEST['imgBase64'] ?? '';
+    // procesando la imagen en base64
+    // procesando la imagen en base64
+    $avatar = ["nombreArchivo" => "", "mensaje" => ""];
+    if(!empty($imgBase64)){
+    // incluir la librería controlImagen.php
+    include_once("controlImagen.php");
+    // llamar a la función para guardar la imagen, se le dará base y la ruta donde se guardará
+    $avatar = guardarImagen($imgBase64, "../imgCargadas/");
+    // Eliminar la imagen anterior si existe
+    $sqlImagenAnterior = "SELECT foto_productos FROM productos WHERE id_productos = ?";
+    $prepararImagenAnterior = mysqli_prepare($conec, $sqlImagenAnterior);
+    mysqli_stmt_bind_param($prepararImagenAnterior, "i", $id_productos);
+    mysqli_stmt_execute($prepararImagenAnterior);
+    $resultadoImagenAnterior = mysqli_stmt_get_result($prepararImagenAnterior);
+    if(mysqli_num_rows($resultadoImagenAnterior) > 0){
+        $filaImagenAnterior = mysqli_fetch_assoc($resultadoImagenAnterior);
+        $nombreArchivoAnterior = $filaImagenAnterior['foto_productos'];
+        if(!empty($nombreArchivoAnterior)){
+            $rutaArchivoAnterior = "../imgCargadas/" . $nombreArchivoAnterior;
+            if(file_exists($rutaArchivoAnterior)){
+                unlink($rutaArchivoAnterior); // Eliminar el archivo anterior
+              }
+          }
+      }
+    }
+    //actualizar la información de los datos en la BD con la imagen si se envía  una nueva  o sin la imagen  si no se envía una nueva
+    if(!empty($imgBase64)){
+      $sql = "UPDATE productos SET nombre_productos = ?, descripcion_productos = ?, precio_productos = ?, cantidad_productos = ?, foto_productos = ? WHERE id_productos = ?";
+    $preparar = mysqli_prepare($conec, $sql);
+    mysqli_stmt_bind_param($preparar, "ssdiss", $nombre_productos, $descripcion_productos, $precio_productos, $cantidad_productos, $avatar["nombreArchivo"], $id_productos);
+    }else{
+      $sql = "UPDATE productos SET nombre_productos = ?, descripcion_productos = ?, precio_productos = ?, cantidad_productos = ? WHERE id_productos = ?";
+      $preparar = mysqli_prepare($conec, $sql);
+      mysqli_stmt_bind_param($preparar, "ssdii", $nombre_productos, $descripcion_productos, $precio_productos, $cantidad_productos, $id_productos);
+    }
+    mysqli_stmt_execute($preparar);
+    //verificar si se ejecutó correctamente
+    if(mysqli_stmt_affected_rows($preparar) > 0 ){
+      //establecer la respuesta de éxito
+      $resultado = ["ok" => true, "mensaje" => $avatar["mensaje"] . " y producto actualizado correctamente"];
+      echo json_encode($resultado);
+    }else{
+      //establecer la respuesta de error
+      $resultado = ["ok" => false, "mensaje" => "Error al actualizar el producto"];
+      echo json_encode($resultado);
+    }
+    //cerrar la conexión sql
+    mysqli_stmt_close($preparar);
+    mysqli_close($conec);  
   }
 
   if($accion == "eliminar"){
-
+    //recibir el id del producto a eliminar
+    $id_productos = $_REQUEST['id_productos'] ?? 0;
+    //Cambiamos el estado a 0
+    $sql = "UPDATE productos SET estado_productos = 0 WHERE id_productos = ?";
+    $preparar = mysqli_prepare($conec, $sql);
+    mysqli_stmt_bind_param($preparar, "i", $id_productos);
+    mysqli_stmt_execute($preparar);
+    //verificamos si se ejecutó
+    if(mysqli_stmt_affected_rows($preparar) > 0){
+      $resultado = ["ok" => true, "mensaje" => "Producto eliminado correctamente"];
+      echo json_encode($resultado);
+    }else{
+      $resultado = ["ok" => false, "mensaje" => "Error al eliminar el producto"];
+      echo json_encode($resultado);
+    }
+    mysqli_stmt_close($preparar);
+    mysqli_close($conec);
   }
 
   if($accion == "buscarMostrar"){

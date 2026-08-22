@@ -1,217 +1,215 @@
 :root {
-    --primary-bg: #134566;
-    --secondary-bg: #e0a32c;
-    --accent-red: #c5283d;
-    --accent-light: #73c5eb;
-    --text-primary: #1b1b1e;
-    --text-secondary: #ffeab9;
-    --card-bg: #ffffff;
-    --gradient-primary: linear-gradient(145deg, #134566, #73c5eb);
+  --primary-bg: #134566;
+  --secondary-bg: #e0a32c;
+  --accent-red: #c5283d;
+  --accent-light: #73c5eb;
+  --text-primary: #1b1b1e;
+  --text-secondary: #ffeab9;
+  --card-bg: #ffffff;
+  --gradient-primary: linear-gradient(145deg, #134566, #73c5eb);
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
 }
 body {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
-    background-color: #f4f6f9;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f4f6f9;
 }
 .slider {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 80px;
-    height: 100vh;
-    z-index: 1000;
-    background: #134566;
-    transition: all 0.3s ease;
-    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+  z-index: 1000;
+  background: #134566;
+  transition: all 0.3s ease;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
 }
 .slider.active {
-    width: 240px;
+  width: 240px;
 }
 .slider .logoContent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  height: 60px;
 }
 .slider .logoContent .logo {
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    font-size: 1.5rem;
-    opacity: 0;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  opacity: 0;
 }
 .slider.active .logoContent .logo {
-    opacity: 1;
+  opacity: 1;
 }
 .slider #btn {
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
-    height: 35px;
-    width: 35px;
-    background: var(--accent-light);
-    color: #134566;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  background: var(--accent-light);
+  color: #134566;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 .slider.active #btn {
-    left: 85%;
+  left: 85%;
 }
 .slider .navList {
-    margin-top: 20px;
-    padding: 0 10px;
+  margin-top: 20px;
+  padding: 0 10px;
 }
 .slider .navList li {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    margin-bottom: 8px;
-    list-style: none;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 8px;
+  list-style: none;
 }
 .slider .navList li .tooltip {
-    position: absolute;
-    width: 120px;
-    text-align: center;
-    top: 50%;
-    left: 100%;
-    transform: translateY(-50%);
-    background: #134566;
-    color: #fff;
-    padding: 6px 12px;
-    border-radius: 6px;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    font-size: 0.85rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  position: absolute;
+  width: 120px;
+  text-align: center;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  background: #134566;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 .slider .navList li:hover .tooltip {
-    opacity: 1;
+  opacity: 1;
 }
 .slider.active .navList li .tooltip {
-    display: none;
+  display: none;
 }
 .slider .navList li a {
-    color: #e2e8f0;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 10px;
-    text-decoration: none;
-    border-radius: 10px;
-    white-space: nowrap;
-    transition: all 0.3s ease;
+  color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
 }
 .slider .navList li a:hover {
-    background: var(--accent-light);
-    color: #134566;
-    font-weight: 600;
+  background: var(--accent-light);
+  color: #134566;
+  font-weight: 600;
 }
 .slider .linksName {
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    margin-left: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  margin-left: 12px;
 }
 .slider.active .linksName {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 .slider .navList li a i {
-    font-size: 1.4rem;
-    min-width: 40px;
-    text-align: center;
+  font-size: 1.4rem;
+  min-width: 40px;
+  text-align: center;
 }
 .slider .profile {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 65px;
-    background: #0d2d44;
-    display: flex;
-    align-items: center;
-    padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background: #0d2d44;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 .slider .profile-details {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  color: #fff;
 }
 .profile-details .name_job {
-    display: none;
-    transition: all 0.3s ease;
-    margin-left: 10px;
+  display: none;
+  transition: all 0.3s ease;
+  margin-left: 10px;
 }
 .slider.active .profile-details .name_job {
-    display: block;
+  display: block;
 }
 .profile-details .name {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
 }
 .profile-details img {
-    height: 42px;
-    width: 42px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--accent-light);
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-light);
 }
 .profile #log_out {
-    position: absolute;
-    right: 20px;
-    bottom: 12px;
-    font-size: 1.4rem;
-    color: #ffffff;
-    background-color: var(--accent-red);
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    text-decoration: none;
+  position: absolute;
+  right: -30px;
+  bottom: 10px;
+  font-size: 2rem;
+  color: var(--accent-red);
+  background-color: #f992a0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: auto;
+  transition: all 0.3s ease;
+  line-height: 40px;
 }
 .profile #log_out:hover {
-    background-color: #a31c2e;
+  background-color: #a31c2e;
 }
 
 .content {
-    position: absolute;
-    height: 100%;
-    width: calc(100% - 80px);
-    left: 80px;
-    padding: 2em;
-    transition: all 0.3s ease;
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 80px);
+  left: 80px;
+  padding: 2em;
+  transition: all 0.3s ease;
 }
 .slider.active ~ .content {
-    left: 240px;
-    width: calc(100% - 240px);
+  left: 240px;
+  width: calc(100% - 240px);
 }
 .dashboard-card {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    margin-top: 20px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
 }
