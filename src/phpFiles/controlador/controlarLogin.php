@@ -46,4 +46,3 @@ if ($preparar) {
 }
 
 mysqli_close($conec);
-?>
