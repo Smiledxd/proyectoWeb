@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="WebEfectiva es una agencia de diseño web profesional que crea sitios web modernos, responsivos y optimizados para SEO. Transformamos tu visión en webs increíbles que generan resultados."
+    />
+    <meta
+      name="keywords"
+      content="diseño web, agencia web, desarrollo web, web responsive, diseño profesional, landing pages"
+    />
+    <meta name="author" content="WebEfectiva" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Spanish" />
+
+    <!-- Open Graph Meta Tags (Social Media) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="WebEfectiva - Agencia de Diseño Web Profesional"
+    />
+    <meta
+      property="og:description"
+      content="Creamos sitios web modernos y responsivos que generan resultados. Desde landing pages hasta plataformas complejas."
+    />
+    <meta
+      property="og:image"
+      content="https://WebEfectiva.site.je/img/mockup/mockup3.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://WebEfectiva.site.je/" />
+    <meta property="og:site_name" content="WebEfectiva" />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="WebEfectiva - Agencia de Diseño Web Profesional"
+    />
+    <meta
+      name="twitter:description"
+      content="Sitios web modernos, responsivos y optimizados para SEO que generan resultados."
+    />
+    <meta
+      name="twitter:image"
+      content="https://WebEfectiva.site.je/img/mockup/mockup3.jpg"
+    />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://WebEfectiva.site.je/" />
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <title>WebEfectiva - Agencia de Diseño Web</title>
+    <link rel="icon" href="img/icono.ico" type="image/.ico" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="layout-container header__flex">
+        <a href="#" class="header__logo">
+          <img src="img/logo.webp" alt="IMAGEN-LOGO" class="header__logo-img" />
+          <h3 class="header__logo-title">
+            Web<span class="header__logo-span">Efectiva</span>
+          </h3>
+        </a>
+        <input type="checkbox" id="check" />
+        <label for="check" class="show-menu"><i class="bx bx-menu"></i></label>
+        <nav class="header__nav">
+          <a href="#" class="header__nav-item">INICIO</a>
+          <a href="#catalog" class="header__nav-item">SERVICIOS</a>
+          <a href="#process" class="header__nav-item">¿CÓMO FUNCIONA?</a>
+          <a href="#plans" class="header__nav-item">PLANES</a>
+          <label for="check" class="header__nav-item hide-menu"
+            ><i class="bx bx-x"></i
+          ></label>
+          <!-- mobile whatsapp -->
+        </nav>
+        <a href="https://wa.me/51929965687" class="header__nav-whatsapp">
+          <i class="bx bxl-whatsapp bx-tada header__btn-icon"></i>Escríbenos</a
+        >
+        <a href="" class="btn header__nav-btn">Escribenos</a>
+        <!-- end mobile whatsapp-->
+        <a href="login.html" class="btn btn--no-mobile">Iniciar Sesión</a>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="layout-container hero__flex">
+        <div class="hero__left">
+          <hgroup class="hero__title-group">
+            <h1 class="btn btn--no-cursor">DISEÑO WEB PROFESIONAL</h1>
+            <h2 class="hero__title">
+              Transformamos Tu Visión en Webs Increíbles
+            </h2>
+            <p class="hero__description">
+              Creamos sitios web modernos, responsivos y optimizados que generan
+              resultados. Desde landing pages hasta plataformas complejas, tu
+              éxito es nuestro enfoque.
+            </p>
+          </hgroup>
+          <div class="hero__buttons">
+            <a href="" class="hero__btn hero__btn--primary"
+              >Ver nuestro trabajo</a
+            >
+            <a
+              href="https://wa.me/51929965687"
+              class="hero__btn hero__btn--whatsapp"
+              ><i class="bx bxl-whatsapp bx-tada hero__btn-icon"></i>Escríbenos
+              por Whatsapp</a
+            >
+          </div>
+          <div class="hero__benefits">
+            <div class="hero__benefit-item">
+              <div class="hero__benefit-icon">
+                <i class="bx bxs-zap"></i>
+              </div>
+              <div class="hero__benefit-text">
+                <h3 class="hero__benefit-title">Responsive</h3>
+                <p class="hero__benefit-desc">
+                  Se adapta a todos los dispositivos
+                </p>
+              </div>
+            </div>
+            <div class="hero__benefit-item">
+              <div class="hero__benefit-icon">
+                <i class="bx bx-palette"></i>
+              </div>
+              <div class="hero__benefit-text">
+                <h3 class="hero__benefit-title">Diseño</h3>
+                <p class="hero__benefit-desc">Creativo y moderno</p>
+              </div>
+            </div>
+            <div class="hero__benefit-item">
+              <div class="hero__benefit-icon">
+                <i class="bx bx-bar-chart-alt"></i>
+              </div>
+              <div class="hero__benefit-text">
+                <h3 class="hero__benefit-title">SEO</h3>
+                <p class="hero__benefit-desc">Optimizado para buscadores</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__right">
+          <div class="hero__video-container">
+            <video
+              src="video/video1.mp4"
+              autoplay
+              muted
+              loop
+              class="hero__mockup hero__mockup--left"
+            >
+              Tu navegador no soporta el video
+            </video>
+          </div>
+          <div class="hero__video-container">
+            <video
+              src="video/video2.mp4"
+              autoplay
+              muted
+              loop
+              class="hero__mockup hero__mockup--center"
+            >
+              Tu navegador no soporta el video
+            </video>
+          </div>
+          <div class="hero__video-container">
+            <video
+              src="video/video3.mp4"
+              autoplay
+              muted
+              loop
+              class="hero__mockup hero__mockup--right"
+            >
+              Tu navegador no soporta el video
+            </video>
+          </div>
+        </div>
+        <!-- background carousel for tablet/mobile -->
+        <div class="hero__bg-carousel" aria-hidden="true">
+          <div class="carousel-slide">
+            <video
+              src="video/video1.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+            ></video>
+          </div>
+          <div class="carousel-slide">
+            <video
+              src="video/video2.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+            ></video>
+          </div>
+          <div class="carousel-slide">
+            <video
+              src="video/video3.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+            ></video>
+          </div>
+          <div class="carousel-dots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+    <section id="catalog" class="catalog">
+      <div class="layout-container catalog__flex">
+        <h2 class="catalog__title">Nuestros servicios Web</h2>
+        <p class="btn--catalog">
+          En WebEfectiva diseñamos páginas para negocios que quieren captar
+          más<br />
+          clientes, ganar confianza y vender más sin depender solo del boca a
+          boca.
+        </p>
+        <div class="catalog__container">
+          <div class="catalog__product">
+            <div class="catalog__product-img">
+              <img src="img/mockup/mockup1.webp" alt="imagen" />
+            </div>
+            <div class="product__card-description">
+              <h3 class="product__card-title">Web corporativa</h3>
+              <p class="product__card-text">
+                Presenta tu marca, tus servicios y genera confianza.
+              </p>
+              <a href="" class="product__card-link"
+                >Ver más<i
+                  class="bx bx-right-arrow-alt bx-fade-left product__card-link-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="catalog__product">
+            <div class="catalog__product-img">
+              <img src="img/mockup/mockup2.webp" alt="imagen" />
+            </div>
+            <div class="product__card-description">
+              <h3 class="product__card-title">Tienda online para vender</h3>
+              <p class="product__card-text">
+                Vende tus productos 24/7 con una tienda moderna y fácil de usar.
+              </p>
+              <a href="" class="product__card-link"
+                >Ver más<i
+                  class="bx bx-right-arrow-alt bx-fade-left product__card-link-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="catalog__product">
+            <div class="catalog__product-img">
+              <img src="img/mockup/mockup3.webp" alt="imagen" />
+            </div>
+            <div class="product__card-description">
+              <h3 class="product__card-title">Landing Page</h3>
+              <p class="product__card-text">
+                Diseñamos páginas enfocadas en convertir visitas en contactos,
+                citas y ventas.
+              </p>
+              <a href="" class="product__card-link"
+                >Ver más<i
+                  class="bx bx-right-arrow-alt bx-fade-left product__card-link-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="catalog__product">
+            <div class="catalog__product-img">
+              <img src="img/mockup/mockup4.webp" alt="imagen" />
+            </div>
+            <div class="product__card-description">
+              <h3 class="product__card-title">Rediseño Web</h3>
+              <p class="product__card-text">
+                Modernizamos sitios web existentes para mejorar su velocidad, y
+                rendimiento.
+              </p>
+              <a href="" class="product__card-link"
+                >Ver más<i
+                  class="bx bx-right-arrow-alt bx-fade-left product__card-link-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="catalog__product">
+            <div class="catalog__product-img">
+              <img src="img/mockup/mockup5.webp" alt="imagen" />
+            </div>
+            <div class="product__card-description">
+              <h3 class="product__card-title">Portafolio profesional</h3>
+              <p class="product__card-text">
+                Muestra tu trabajo y convierte tus proyectos en oportunidades
+                reales.
+              </p>
+              <a href="" class="product__card-link"
+                >Ver más<i
+                  class="bx bx-right-arrow-alt bx-fade-left product__card-link-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a class="catalog__flex-btn" href="">Ver todos nuestros proyectos</a>
+      </div>
+    </section>
+    <section class="process" id="process">
+      <div class="layout-container process__flex">
+        <h2 class="process__title">¿Cómo Trabajamos? Tres Pasos Simples</h2>
+        <div class="process__gallery">
+          <div class="process__container">
+            <div class="process__icon-container">
+              <i class="bx bx-task process__icon"></i>
+            </div>
+            <div class="process__container-description">
+              <h3 class="process__container-title">1. Consulta & Análisis</h3>
+              <p class="process__container-text">
+                Entendemos tus necesidades y objetivos de negocio
+              </p>
+            </div>
+          </div>
+          <div class="process__container">
+            <div class="process__icon-container">
+              <i class="bx bx-edit-alt process__icon"></i>
+            </div>
+            <div class="process__container-description">
+              <h3 class="process__container-title">2. Diseño & Desarrollo</h3>
+              <p class="process__container-text">
+                Creamos tu web con tecnología moderna y responsiva
+              </p>
+            </div>
+          </div>
+          <div class="process__container">
+            <div class="process__icon-container">
+              <i class="bx bxs-zap process__icon"></i>
+            </div>
+            <div class="process__container-description">
+              <h3 class="process__container-title">3. Lanzamiento & Soporte</h3>
+              <p class="process__container-text">
+                Publicamos y damos mantenimiento continuo
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="plans" id="plans">
+      <div class="layout-container plans__flex">
+        <div class="plans__left">
+          <h2 class="plans__title">Planes Diseñados para Ti</h2>
+          <div class="plans__container">
+            <div class="plans__container-description">
+              <div class="plans__item-title">Landing Page</div>
+              <div class="plans__item-desc">
+                Página de destino de una sección.
+              </div>
+              <div class="plans__item-label">Desde</div>
+              <div class="plans__item-price">S/.350</div>
+              <div class="plans__item-features-container">
+                <ul class="plans__item-feature">
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Diseño responsivo moderno
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Formularios de contacto
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Optimización SEO básica
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Certificado SSL incluido
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Hosting por 1 año
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="plans__container-description">
+              <div class="plans__item-title">Web Corporativa</div>
+              <div class="plans__item-desc">
+                Sitio profesional con múltiples secciones.
+              </div>
+              <div class="plans__item-label">Desde</div>
+              <div class="plans__item-price">S/.999</div>
+              <div class="plans__item-features-container">
+                <ul class="plans__item-feature">
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Hasta 5 páginas internas
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Sistema de blog incluido
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >SEO avanzado implementado
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Integración con redes sociales
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Soporte 6 meses incluido
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="plans__container-description">
+              <div class="plans__item-title">E-commerce</div>
+              <div class="plans__item-desc">
+                Tienda online con todo incluido para vender.
+              </div>
+              <div class="plans__item-label">Desde</div>
+              <div class="plans__item-price">S/.2000</div>
+              <div class="plans__item-features-container">
+                <ul class="plans__item-feature">
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Carrito de compras avanzado
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Pedido directo automatizado a WhatsApp
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Gestión de inventario
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Panel de administración completo
+                  </li>
+                  <li class="plans__item-feature-box">
+                    <i class="bx bx-check-circle plans__item-feature-icon"></i
+                    >Soporte técnico 12 meses
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plans__right">
+          <div class="plans__extra-title">Incluido en todos</div>
+          <div class="plans__extra-item">
+            <div class="plans__extra-icon-container">
+              <i class="bx bx-trophy plans__extra-icon"></i>
+            </div>
+            <div class="plans__extra-text">
+              <span class="plans__extra-subtitle">Dominio Gratis</span>
+              <p class="plans__extra-desc">Un año de dominio .com</p>
+            </div>
+          </div>
+          <div class="plans__extra-item">
+            <div class="plans__extra-icon-container">
+              <i class="bx bx-trophy plans__extra-icon"></i>
+            </div>
+            <div class="plans__extra-text">
+              <span class="plans__extra-subtitle">Hosting Rápido</span>
+              <p class="plans__extra-desc">
+                Servidor con excelente rendimiento
+              </p>
+            </div>
+          </div>
+          <div class="plans__extra-item">
+            <div class="plans__extra-icon-container">
+              <i class="bx bx-trophy plans__extra-icon"></i>
+            </div>
+            <div class="plans__extra-text">
+              <span class="plans__extra-subtitle">SSL Seguro</span>
+              <p class="plans__extra-desc">Certificado de seguridad incluido</p>
+            </div>
+          </div>
+          <div class="plans__extra-item">
+            <div class="plans__extra-icon-container">
+              <i class="bx bx-trophy plans__extra-icon"></i>
+            </div>
+            <div class="plans__extra-text">
+              <span class="plans__extra-subtitle">Mantenimiento</span>
+              <p class="plans__extra-desc">Soporte técnico permanente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recommendations">
+      <div class="layout-container recommendations__flex">
+        <h2 class="recommendations__title">
+          Lo Que Nuestros Clientes Dicen de Nosotros
+        </h2>
+        <div class="recommendations__container">
+          <div class="recommendations__card">
+            <div class="recommendations__card-img">
+              <img src="img/recommendations/1.webp" alt="" />
+            </div>
+            <div class="recommendations__card-text">
+              <div class="stars">
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+              </div>
+              <p>
+                Excelente equipo, muy profesionales. Mi web quedó increíble.
+              </p>
+            </div>
+          </div>
+          <div class="recommendations__card">
+            <div class="recommendations__card-img">
+              <img src="img/recommendations/2.webp" alt="" />
+            </div>
+            <div class="recommendations__card-text">
+              <div class="stars">
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+              </div>
+              <p>
+                Mi tienda online generó ventas desde el primer día publicada.
+              </p>
+            </div>
+          </div>
+          <div class="recommendations__card">
+            <div class="recommendations__card-img">
+              <img src="img/recommendations/3.webp" alt="" />
+            </div>
+            <div class="recommendations__card-text">
+              <div class="stars">
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+                <i class="bx bxs-star" style="color: #eae01d"></i>
+              </div>
+              <p>Muy recomendado. Equipo creativo y profesional. Top!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="layout-container">
+        <!-- Top Section: Main Footer Grid -->
+        <div class="footer__top">
+          <!-- Column 1: Brand Info -->
+          <div class="footer__col footer__col--brand">
+            <a href="index.html" class="header__logo footer__logo">
+              <img
+                src="img/logo.png"
+                alt="IMAGEN-LOGO"
+                class="header__logo-img"
+              />
+              <h3 class="header__logo-title">
+                Web<span class="header__logo-span">Efectiva</span>
+              </h3>
+            </a>
+            <p class="footer__brand-desc">
+              Transformamos ideas en experiencias digitales únicas y altamente
+              optimizadas. Soluciones web modernas y responsivas para potenciar
+              tu marca.
+            </p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social-link" title="Facebook"
+                ><i class="bx bxl-facebook"></i
+              ></a>
+              <a href="#" class="footer__social-link" title="Instagram"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a href="#" class="footer__social-link" title="LinkedIn"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+              <a href="#" class="footer__social-link" title="TikTok"
+                ><i class="bx bxl-tiktok"></i
+              ></a>
+              <a href="#" class="footer__social-link" title="WhatsApp"
+                ><i class="bx bxl-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="footer__col">
+            <h4 class="footer__col-title">Navegación</h4>
+            <ul class="footer__list">
+              <li>
+                <a href="index.html#home" class="footer__link"
+                  ><i class="bx bx-chevron-right"></i> Inicio</a
+                >
+              </li>
+              <li>
+                <a href="index.html#catalog" class="footer__link"
+                  ><i class="bx bx-chevron-right"></i> Productos</a
+                >
+              </li>
+              <li>
+                <a href="index.html#process" class="footer__link"
+                  ><i class="bx bx-chevron-right"></i> ¿Cómo funciona?</a
+                >
+              </li>
+              <li>
+                <a href="index.html#plans" class="footer__link"
+                  ><i class="bx bx-chevron-right"></i> Precios</a
+                >
+              </li>
+              <li>
+                <a href="login.html" class="footer__link"
+                  ><i class="bx bx-chevron-right"></i> Iniciar Sesión</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Legales y Normativas -->
+          <div class="footer__col">
+            <h4 class="footer__col-title">Legales y Políticas</h4>
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__link"
+                  ><i class="bx bx-shield-quarter"></i> Política de
+                  Privacidad</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__link"
+                  ><i class="bx bx-file"></i> Términos y Condiciones</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__link"
+                  ><i class="bx bx-cookie"></i> Política de Cookies</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__link"
+                  ><i class="bx bx-detail"></i> Aviso Legal</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__link footer__link--reclamaciones">
+                  <i class="bx bx-book-bookmark"></i> Libro de Reclamaciones
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contacto -->
+          <div class="footer__col">
+            <h4 class="footer__col-title">Contacto</h4>
+            <ul class="footer__contact-info">
+              <li>
+                <i class="bx bx-map"></i>
+                <span>Av. Central 123, Lima, Perú</span>
+              </li>
+              <li>
+                <i class="bx bx-envelope"></i>
+                <span>contacto@WebEfectivaweb.com</span>
+              </li>
+              <li><i class="bx bx-phone"></i> <span>+51 929 965 687</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Section: Copyright -->
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2026 <strong>WebEfectiva</strong>. Todos los derechos
+            reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "WebEfectiva",
+        "url": "https://Webefectiva.site.je/",
+        "logo": "https://Webefectiva.site.je/img/logo.webp",
+        "description": "Agencia de diseño web profesional que crea sitios web modernos, responsivos y optimizados para SEO.",
+        "sameAs": [
+          "https://www.facebook.com/Webefectiva",
+          "https://www.twitter.com/Webefectiva",
+          "https://www.instagram.com/Webefectiva",
+          "https://www.linkedin.com/company/Webefectiva"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Service",
+          "telephone": "+51-929-965-687",
+          "availableLanguage": ["es", "en"]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle Principal 123",
+          "addressLocality": "Lima",
+          "addressRegion": "Lima",
+          "postalCode": "15001",
+          "addressCountry": "PE"
+        },
+        "service": [
+          {
+            "@type": "Service",
+            "name": "Diseño Web Responsivo",
+            "description": "Diseño web moderno que se adapta a todos los dispositivos",
+            "provider": {
+              "@type": "Organization",
+              "name": "WebEfectiva"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Landing Pages",
+            "description": "Páginas de destino optimizadas para conversiones",
+            "provider": {
+              "@type": "Organization",
+              "name": "WebEfectiva"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Desarrollo Web",
+            "description": "Plataformas web complejas y funcionales",
+            "provider": {
+              "@type": "Organization",
+              "name": "WebEfectiva"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Optimización SEO",
+            "description": "Sitios web optimizados para motores de búsqueda",
+            "provider": {
+              "@type": "Organization",
+              "name": "WebEfectiva"
+            }
+          }
+        ]
+      }
+    </script>
+    <!-- JSON-LD WebPage Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "WebEfectiva - Agencia de Diseño Web Profesional",
+        "url": "https://WebEfectiva.site.je/",
+        "description": "WebEfectiva es una agencia de diseño web profesional que crea sitios web modernos, responsivos y optimizados para SEO.",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "WebEfectiva"
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "WebEfectiva",
+          "url": "https://WebEfectiva.site.je/"
+        }
+      }
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
